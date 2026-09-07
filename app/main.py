@@ -39,7 +39,7 @@ class Distance:
             return self.km > other.km
         return self.km > other
 
-    def __le__(self, other: Distance | int) -> bool:
+    def __le__(self, other: float | int) -> bool:
         if isinstance(other, Distance):
             return self.km <= other.km
         return self.km <= other
